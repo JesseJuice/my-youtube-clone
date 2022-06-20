@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between; /** to have space between header contents **/
+	align-items: center; /** move header contents to center left **/
+	height: 60px;
+	padding: 15px;
+}
+
+.container{
+	background: #f9f9f9;
+	padding-left: 17%;
+	padding-right: 2%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/** play video page **/
+
+.play-container {
+	padding-left: 2%;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.play-video{
+	flex-basis: 69%;
+}
+
+.right-sidebar{
+	flex-basis: 30%;
+}
+
+.play-video video{
+	width: 100%;
+}
+
+.side-video-list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.side-video-list img{
+	width: 100%;
+}
+
+.side-video-list .small-thumbnail{
+	flex-basis: 49%;
+}
+
+.side-video-list .vid-info{
+	flex-basis: 49%;
+}
+
+.play-video .tags a{
+	color: #0000FF;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.play-video h3 {
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.play-video .play-video-info{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 10px;
+	font-size: 14px;
+	color: #5a5a5a;
+}
+
+.play-video .play-video-info a img{
+	width: 20px;
+	margin-right: 8px;
+}
+
+.play-video .play-video-info a{
+	display: inline-flex;
+	align-items: center;
+	margin-left: 15px;
+}
+
+.play-video hr{
+	border: 0;
+	height: 1px;
+	background: #ccc;
+	margin: 10px 0px;
+}
+
+.publisher{
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.publisher div{
+	flex: 1; /**  **/
+	line-height: 18px;
+}
+
+.publisher img{
+	width: 40px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.publisher div p{
+	color: #000;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.publisher div span{
+	font-size: 13px;
+	color: #5a5a5a;
+}
+
+.publisher button{
+	background: red;
+	color: #fff;
+	padding: 8px 30px;
+	border: 0;
+	outline: 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.vid-description{
+	padding-left: 55px;
+	margin: 15px 0px;
+}
+
+.vid-description p{
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #5a5a5a;
+}
+
+.vid-description h4{
+	font-size: 14px;
+	color: #5a5a5a;
+	margin-top: 15px;
+}
+
+.add-comment{
+	display: flex;
+	align-items: center;
+	margin: 30px 0;
+}
+
+.add-comment img{
+	
+}
+
+main{
+	height: calc(100vh - 70px); /**height visible on browser**/
+	display: flex;
+	background-color: #f9f9f9;
+}
+
+.side-bar{
+	height: 100%; /**set height same to its parent <body> **/
+	width: 13%;
+	background-color: white;
+	overflow-y: hidden; /** To hide the scroll bars **/
+}
+
+
+/** Logo left side bar **/
+
+.left{
+	display: flex;
+	align-items: center;
+}
+
+.left #menu{
+	padding: 0 7px;
+	cursor: pointer;
+}
+
+
+/** Center Section **/
+
+.search{
+	display: flex;
+}
+
+.search form{
+	display: flex;
+	border: 1px solid #ddd;
+	height: 45px;
+}
+
+.search input{
+	width: 600px; /**width of the input**/
+	padding: 10px;
+	border: 0;
+	height: 100%; /** 100% of height of parent element header **/
+	border-radius: 2px 0 0 2px;
+}
+
+input:focus {
+	outline: none;
+	border: 1px solid #ddd;
+}
+
+/** Style of the search and mic icons **/
+
+.search button{
+	height: 100%; /**height 100% of its parent .search **/
+	width: 60px;
+	border: none;
+}
+
+.mic{
+	margin-top: 10px; /** moves mic icon 10px down **/
+}
+
+/** End of Center Section **/
+
+
+
+/** Designing material icons **/
+
+.material-icons {
+	color: rgb(100, 100, 100);
+	padding: 0 7px;
+	cursor: pointer;
+}
+
+.cam{
+	color: #FF0000;
+}
+
+
+/** End of Material Icon Design **/
+
+
+/** Designing Side Bar Design **/
+
+.nav{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}	
+
+
+.nav-link{
+	display: flex;
+	align-items: center;
+	padding: 12px 25px;
+}
+
+.nav-link span{
+	margin-left: 15px;
+}
+
+.nav-link:hover{
+	background: #e5e5e5;
+	cursor: pointer;
+}
+
+.active{
+	background: #e5e5e5;
+}
+
+hr{
+	height: 1px; /**thinness of the line**/
+	background-color: #e5e5e5;
+	border: none;
+}
+
+/** End of Side Bar Design **/
+
+/** Start of Content Section **/
+
+.content{
+	background-color: #f9f9f9;
+	width: 100%;
+	height: 100%;
+	padding: 15px 15px; /** x-axis(top) y-axis(side)**/
+	border-top: 1px solid #ddd;
+	overflow-y: scroll;
+}
+
+.videos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.video{
+	width: 320px;
+	margin-bottom: 30px;
+}
+
+.thumbnail{
+	width: 100%;
+	height: 170px;
+}
+
+.thumbnail img{
+	object-fit: cover; /** used to clip the image to its container **/
+	height: 94%;
+	width: 100%;
+}
+
+.author img{
+	object-fit: cover;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+
+.details{
+	display: flex; /**we did set direction | default value is row**/
+}
+
+.title{
+	display: flex;
+	flex-direction: column; /** direction set to row **/
+}
+
+.title h3{
+	color: rgb(3, 3, 3);
+	line-height: 18px;
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+
+.title a, span{
+	text-decoration: none; /**to remove underline under author name**/
+	color: rgb(96, 96, 96);
+	font-size: 12px;
+}
+
+/** End of Content Section **/
+
+/** Media Queries **/
+
+@media (max-width: 1312px){
+	/**if screen is 7688px or less, sidebar is hidden**/
+	.side-bar {
+		width: 5.9%;
+	}
+
+	.nav-link:hover{
+	background: #e5e5e5;
+	cursor: pointer;
+}
+
+	.material-icons{
+		position: relative;
+		right: 12px;
+	}
+
+	.search{
+		display: none;
+	}
+	.search input{
+		width: 25rem;
+	}
+}
